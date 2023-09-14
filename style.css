@@ -10,6 +10,12 @@ p {
     color: white !important;
 }
 
+#loginContainer h1 {
+    font-family: Century Gothic;
+    font-weight: bold;
+}
+
+
 #loginContainer h2 {
     font-weight: lighter;
 }
@@ -24,6 +30,11 @@ p {
 #loginContainer button {
     padding: 8px;
     background-color: #C8EC56;
+    transition: background-color 0.1s ease-in;
+}
+
+#loginContainer button:hover {
+    background-color: #879e39;
 }
 
 #loginContainer{
