@@ -158,8 +158,89 @@ body {
 #tableTitle {
     background-color: white;
     border-bottom: 2px solid rgba(240, 240, 240, 1);
+    position: relative;
+}
+
+#tableTitle::before{
+    width: 250px;
+    height: 100%;
+    right: 0;
+    top: -20px;
+    content: '';
+    position: absolute;
+    background-color: #049547;
+    opacity: 10%;
+    border-radius: 0% 100% 0% 100% / 0% 0% 100% 100% ;
 }
 
 #tableTitle h1 {
     color: #049547;
+}
+
+#tableAddItem button{
+    background-color: #049547;
+    border-radius: 15px;
+    padding: 10px;
+    width: auto;
+    color: white;
+    font-size: 18px;
+    border: 2px solid transparent;
+}
+
+#tableAddItem button:hover{
+    background-color: #00632e;
+}
+
+#view{
+    padding: 8px;
+    background-color: #00d262;
+    box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.09);
+    -webkit-box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.09);
+    border-radius: 50%;
+}
+
+#tableContainer span{
+    cursor: pointer;
+}
+
+#view:hover{
+    background-color: #00632e;
+}
+
+#settings{
+    padding: 8px;
+    background-color: lightblue;
+    box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.09);
+    -webkit-box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.09);
+    border-radius: 50%;
+}
+
+#settings:hover{
+    background-color: rgb(114, 141, 150);
+}
+
+#delete{
+    padding: 8px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+#delete:hover{
+    background-color: rgb(106, 0, 0);
+}
+/* <!--===============================================================================================--> */
+#addProductModal .modal-body{
+    display: flex;
+    flex-direction: column;
+}
+
+#addProductModal .modal-body label{
+    font-size: 20px;
+}
+
+#addProductModal .modal-body input{
+    padding: 5px;
+    border: 1px solid black;
 }
