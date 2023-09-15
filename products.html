@@ -103,12 +103,53 @@
                                     <td>15</td>
                                     <td>100</td>
                                     <td>fully stocked</td>
-                                    <td class="d-flex align-items-center gap-2"><span data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="material-symbols-outlined"
+                                    <td class="d-flex align-items-center gap-2"><span data-bs-toggle="modal"
+                                            data-bs-target="#viewProductModal" class="material-symbols-outlined"
                                             id="view">
                                             visibility
-                                        </span><span class="material-symbols-outlined" id="settings">
+                                        </span><span data-bs-toggle="modal"
+                                        data-bs-target="#settingsProductModal" class="material-symbols-outlined" id="settings">
                                             settings
-                                        </span><span class="material-symbols-outlined" id="delete">
+                                        </span><span data-bs-toggle="modal"
+                                        data-bs-target="#deleteProductModal" class="material-symbols-outlined" id="delete">
+                                            delete
+                                        </span></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Apple</td>
+                                    <td>Apple.jpg</td>
+                                    <td>15</td>
+                                    <td>100</td>
+                                    <td>fully stocked</td>
+                                    <td class="d-flex align-items-center gap-2"><span data-bs-toggle="modal"
+                                            data-bs-target="#viewProductModal" class="material-symbols-outlined"
+                                            id="view">
+                                            visibility
+                                        </span><span data-bs-toggle="modal"
+                                        data-bs-target="#settingsProductModal" class="material-symbols-outlined" id="settings">
+                                            settings
+                                        </span><span data-bs-toggle="modal"
+                                        data-bs-target="#deleteProductModal" class="material-symbols-outlined" id="delete">
+                                            delete
+                                        </span></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Apple</td>
+                                    <td>Apple.jpg</td>
+                                    <td>15</td>
+                                    <td>100</td>
+                                    <td>fully stocked</td>
+                                    <td class="d-flex align-items-center gap-2"><span data-bs-toggle="modal"
+                                            data-bs-target="#viewProductModal" class="material-symbols-outlined"
+                                            id="view">
+                                            visibility
+                                        </span><span data-bs-toggle="modal"
+                                        data-bs-target="#settingsProductModal" class="material-symbols-outlined" id="settings">
+                                            settings
+                                        </span><span data-bs-toggle="modal"
+                                        data-bs-target="#deleteProductModal" class="material-symbols-outlined" id="delete">
                                             delete
                                         </span></td>
                                 </tr>
@@ -119,16 +160,43 @@
             </div>
         </div>
         <!-- View Modal -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal fade" id="viewProductModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">View Product</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <label for="">Product Name</label>
+                        <input class="mt-2" type="text" name="" id="" placeholder="Enter Product Name..." disabled>
+                        <label for="" class="mt-2">Product Image</label>
+                        <input class="mt-2" type="file" name="" id=""
+                            style="border: 0px solid transparent !important; padding: 0px !important;" disabled>
+                        <label for="" class="mt-2">Product Price</label>
+                        <input class="mt-2" type="text" name="" id="" placeholder="Enter Product Price..." disabled>
+                        <label for="" class="mt-2">Product Stocks</label>
+                        <input class="mt-2" type="text" name="" id="" placeholder="Enter Product Stocks..." disabled>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Submit</button>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <label for="">Product Name</label>
+            </div>
+        </div>
+        <!-- Settings Modal -->
+        <div class="modal fade" id="settingsProductModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Edit Product</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <label for="">Product Name</label>
                         <input class="mt-2" type="text" name="" id="" placeholder="Enter Product Name...">
                         <label for="" class="mt-2">Product Image</label>
                         <input class="mt-2" type="file" name="" id=""
@@ -137,15 +205,33 @@
                         <input class="mt-2" type="text" name="" id="" placeholder="Enter Product Price...">
                         <label for="" class="mt-2">Product Stocks</label>
                         <input class="mt-2" type="text" name="" id="" placeholder="Enter Product Stocks...">
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Submit</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
+        <!-- Delete Modal -->
+        <div class="modal fade" id="deleteProductModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Delete Product</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <label for="">Are you sure you want to delete?</label>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-danger">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Add Modal -->
         <div class="modal fade" id="addProductModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -172,7 +258,7 @@
                     </div>
                 </div>
             </div>
-            
+
 
 
         </div>
