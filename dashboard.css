@@ -200,7 +200,19 @@ body {
     border-radius: 50%;
 }
 
-#tableContainer span{
+table img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+
+table td{
+    height: 100px;
+    min-height: 100%;
+}
+
+
+#actionLists span{
     cursor: pointer;
 }
 
