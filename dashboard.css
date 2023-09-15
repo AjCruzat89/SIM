@@ -231,16 +231,17 @@ body {
     background-color: rgb(106, 0, 0);
 }
 /* <!--===============================================================================================--> */
-#addProductModal .modal-body{
+.modal-body{
     display: flex;
     flex-direction: column;
 }
 
-#addProductModal .modal-body label{
+.modal-body label{
     font-size: 20px;
 }
 
-#addProductModal .modal-body input{
+.modal-body input{
     padding: 5px;
     border: 1px solid black;
 }
+/* <!--===============================================================================================--> */
