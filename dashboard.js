@@ -27,7 +27,6 @@ menuButton.addEventListener('click', () => {
         sidebar.classList.toggle('d-flex');
     }
 });
-
 /* <!--===============================================================================================--> */
 const backButton = document.querySelector('.backButton');
 

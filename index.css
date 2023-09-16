@@ -42,26 +42,26 @@ nav i:hover{
     }
 }
 /* <!--===============================================================================================--> */
-.col{
-    height: 640px;
+#homeContent .col{
+    height: 640px !important;
 }
 
 @media (max-width: 768px) {
-    .col{
-        height: 300px;
+    #homeContent .col{
+        height: 300px !important;
     }
 }
 
-.col h1{
+#homeContent .col h1{
     color: #C8EC56;
     font-family: Comic Sans;
 }
 
-.col h2{
+#homeContent .col h2{
     color: white;
 }
 
-.col img{
+#homeContent .col img{
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -158,4 +158,25 @@ nav i:hover{
 
 #profileDropdown a:hover {
     color: #049547;
+}
+/* <!--===============================================================================================--> */
+#gridBox .col{
+    height: 640px !important;
+}
+
+@media (max-width: 768px) {
+    #gridBox .col{
+        height: 300px !important;
+    }
+}
+
+#gridBox .col img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#gridBox .col h1{
+    color: #C8EC56;
+    font-family: Comic Sans;
 }
