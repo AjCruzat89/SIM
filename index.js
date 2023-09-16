@@ -12,3 +12,14 @@ profileButton.addEventListener('click', () => {
         profileDropdown.classList.add('d-none');
     }
 })
+
+const cart = document.querySelector('.bi-bag');
+const cartBadge = document.querySelector('.bi-bag span');
+
+cart.addEventListener('mouseenter', () => {
+    cartBadge.style.color = '#C8EC56';
+});
+
+cart.addEventListener('mouseleave', () => {
+    cartBadge.style.color = 'red';
+});

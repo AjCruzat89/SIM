@@ -1,8 +1,9 @@
-body{
+body {
     background-color: #404040 !important;
 }
+
 /* <!--===============================================================================================--> */
-nav{
+nav {
     background-color: black;
     color: white !important;
 }
@@ -13,40 +14,42 @@ nav i {
     cursor: pointer;
 }
 
-nav i:hover{
+nav i:hover {
     color: #C8EC56;
 }
+
 /* <!--===============================================================================================--> */
-#lists li{
+#lists li {
     list-style: none;
 }
 
-#lists li a{
+#lists li a {
     text-decoration: none;
     color: white;
     transition: color 0.2s ease-in;
 }
 
-#lists li a:hover{
+#lists li a:hover {
     color: #C8EC56;
 }
 
 @media (max-width:768px) {
-    #lists{
+    #lists {
         background-color: black;
         margin: 0px;
     }
 
-    #lists a{
+    #lists a {
         font-size: 25px;
     }
 }
+
 /* <!--===============================================================================================--> */
-#profileButton{
+#profileButton {
     cursor: pointer;
 }
 
-#profileButton:hover{
+#profileButton:hover {
     color: #049547;
 }
 
@@ -74,4 +77,43 @@ nav i:hover{
 #profileDropdown a:hover {
     color: #049547;
 }
+
 /* <!--===============================================================================================--> */
+#cart {
+    box-shadow: 1px -1px 43px 0px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 1px -1px 43px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 1px -1px 43px 0px rgba(0, 0, 0, 1);
+    border-radius: 15px;
+}
+
+@media (min-width: 576px) {
+    #cart{
+        overflow: hidden;
+    }
+}
+
+#cart .col,
+#cart .col-5 {
+    background-color: white;
+}
+
+#checkoutLists label {
+    font-family: Poppins;
+    font-size: 20px;
+}
+
+#checkoutLists input {
+    padding: 3px;
+}
+
+/* <!--===============================================================================================--> */
+table img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+
+table td {
+    height: 100px;
+    min-height: 100%;
+}

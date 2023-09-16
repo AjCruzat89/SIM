@@ -1,6 +1,8 @@
 /* <!--===============================================================================================--> */
 const profileButton = document.querySelector('#profileButton');
 const profileDropdown = document.querySelector('#profileDropdown');
+const menuButton = document.querySelector('#menuButton');
+const sidebar = document.querySelector('#sidebar');
 
 profileButton.addEventListener('click', () => {
     if (profileDropdown.classList.contains('d-none')) {
@@ -14,15 +16,12 @@ profileButton.addEventListener('click', () => {
     }
 })
 /* <!--===============================================================================================--> */
-const menuButton = document.querySelector('#menuButton');
-const sidebar = document.querySelector('#sidebar');
+
 
 menuButton.addEventListener('click', () => {
-    if (window.innerWidth > 568) {
-        // If window width is greater than 568, toggle d-md-flex
+    if (window.innerWidth > 768) {
         sidebar.classList.toggle('d-md-flex');
     } else {
-        // If window width is less than or equal to 568, toggle d-none and d-flex
         sidebar.classList.toggle('d-none');
         sidebar.classList.toggle('d-flex');
     }
