@@ -75,16 +75,8 @@ nav i:hover{
     color: #049547;
 }
 /* <!--===============================================================================================--> */
-#gridCards{
-    overflow: hidden !important;
-    width: 100%;
-}
-
-#gridCards .col{
+#gridCards .box{
     background-color: black;
-    padding: 0px;
-    width: 300px;
-    overflow: hidden;
 }
 
 #gridCards .col img{
@@ -92,19 +84,30 @@ nav i:hover{
     object-fit: cover;
 }
 
-#gridCards .col h2, #gridCards .col h5{
+#gridCards .col h3, #gridCards .col h4{
     color: white;
 }
 
+#gridCards .col h5{
+    margin-top: 5px;
+}
+
 #gridCards .col input[type=number]{
-    width: 50px;
+    width: 30px;
     margin-bottom: 8px;
+    height: 30px;
+}
+
+#gridCards .col select{
+    width: 70px;
+    height: 30px;
 }
 
 #gridCards .col button{
     background-color: #C8EC56;
     height: 50px;
     border: 0px solid transparent;
+    width: 100%;
 }
 
 #gridCards .col button:hover{
