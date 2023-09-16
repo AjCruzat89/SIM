@@ -180,3 +180,14 @@ nav i:hover{
     color: #C8EC56;
     font-family: Comic Sans;
 }
+/* <!--===============================================================================================--> */
+#googleMap{
+    height: 640px !important;
+}
+
+@media (max-width: 768px) {
+    #googleMap{
+        height: 300px !important;
+    }
+}
+
