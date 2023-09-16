@@ -43,7 +43,7 @@ nav i:hover{
 }
 /* <!--===============================================================================================--> */
 .col{
-    height: 780px;
+    height: 600px;
 }
 
 @media (max-width: 768px) {
@@ -66,4 +66,43 @@ nav i:hover{
     width: 100%;
     height: 100%;
 }
+/* <!--===============================================================================================--> */
+.swiper {
+    width: 100%;
+  }
 
+#sliderButtons i{
+    background-color: white;
+    padding: 11px 15px;
+    border-radius: 50%;
+    transition: background-color 0.2s ease-in;
+}
+
+#sliderButtons i:hover{
+    background-color: #C8EC56;
+    cursor: pointer;
+}
+
+.swiper-slide{
+    background-color: black;
+}
+
+.swiper-slide{
+    overflow: hidden;
+    border-radius: 15px;
+    display: flex !important;
+    flex-direction: column;
+    height: 500px;
+}
+
+.swiper-slide img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.swiper-content{
+    color: white;
+    margin: 0 !important;
+    padding: 15px;
+}
