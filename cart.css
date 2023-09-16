@@ -1,0 +1,77 @@
+body{
+    background-color: #404040 !important;
+}
+/* <!--===============================================================================================--> */
+nav{
+    background-color: black;
+    color: white !important;
+}
+
+nav i {
+    font-size: 25px;
+    transition: color 0.2s ease-in;
+    cursor: pointer;
+}
+
+nav i:hover{
+    color: #C8EC56;
+}
+/* <!--===============================================================================================--> */
+#lists li{
+    list-style: none;
+}
+
+#lists li a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s ease-in;
+}
+
+#lists li a:hover{
+    color: #C8EC56;
+}
+
+@media (max-width:768px) {
+    #lists{
+        background-color: black;
+        margin: 0px;
+    }
+
+    #lists a{
+        font-size: 25px;
+    }
+}
+/* <!--===============================================================================================--> */
+#profileButton{
+    cursor: pointer;
+}
+
+#profileButton:hover{
+    color: #049547;
+}
+
+#profileDropdown {
+    right: 0;
+    top: 60px;
+    width: 200px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 15px;
+    z-index: 9999;
+}
+
+#profileDropdown {
+    gap: 10px 0px;
+}
+
+#profileDropdown a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+#profileDropdown a:hover {
+    color: #049547;
+}
+/* <!--===============================================================================================--> */
