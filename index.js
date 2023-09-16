@@ -1,3 +1,4 @@
+/* <!--===============================================================================================--> */
 const profileButton = document.querySelector('#profileButton');
 const profileDropdown = document.querySelector('#profileDropdown');
 
@@ -12,7 +13,7 @@ profileButton.addEventListener('click', () => {
         profileDropdown.classList.add('d-none');
     }
 })
-
+/* <!--===============================================================================================--> */
 const cart = document.querySelector('.bi-bag');
 const cartBadge = document.querySelector('.bi-bag span');
 
@@ -23,3 +24,4 @@ cart.addEventListener('mouseenter', () => {
 cart.addEventListener('mouseleave', () => {
     cartBadge.style.color = 'red';
 });
+/* <!--===============================================================================================--> */
