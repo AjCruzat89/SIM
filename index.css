@@ -43,7 +43,7 @@ nav i:hover{
 }
 /* <!--===============================================================================================--> */
 .col{
-    height: 600px;
+    height: 640px;
 }
 
 @media (max-width: 768px) {
@@ -89,7 +89,6 @@ nav i:hover{
 
 .swiper-slide{
     overflow: hidden;
-    border-radius: 15px;
     display: flex !important;
     flex-direction: column;
     height: 500px;
@@ -105,4 +104,25 @@ nav i:hover{
     color: white;
     margin: 0 !important;
     padding: 15px;
+}
+/* <!--===============================================================================================--> */
+#viewAllContainer button{
+    padding: 10px;
+    width: 100px;
+    border-radius: 15px;
+    border: 0px solid transparent;
+}
+
+@media (max-width: 568px) {
+    #viewAllContainer button{
+        padding: 10px;
+        height: 50px;
+        width: 120px;
+    }
+}
+
+#viewAllContainer button:hover{
+    background-color: #C8EC56;
+    
+
 }
