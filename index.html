@@ -91,7 +91,20 @@
                             <p>200</p>
                         </div>
                     </div>
-      
+                    <div class="swiper-slide">
+                        <img src="./img/egg.jpg" alt="">
+                        <div class="swiper-content">
+                            <h2>Copy of egg</h2>
+                            <p>200</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/egg.jpg" alt="">
+                        <div class="swiper-content">
+                            <h2>Copy of egg</h2>
+                            <p>200</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -109,12 +122,20 @@
     <script>
         const mySwiper = new Swiper('.swiper', {
             direction: 'horizontal',
-            slidesPerView: 4,
+            slidesPerView: 1    ,
             centeredSlides: false,
             spaceBetween: 10,
             navigation: {
                 nextEl: '.bi-caret-right-fill',
                 prevEl: '.bi-caret-left-fill',
+            },
+            breakpoints: {
+                568: {
+                    slidesPerView: 2,
+                },
+                1400:{
+                    slidesPerView: 5,
+                }
             },
         });
     </script>
