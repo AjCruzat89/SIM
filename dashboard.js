@@ -28,12 +28,6 @@ menuButton.addEventListener('click', () => {
     }
 });
 
-
-
-
-
-
-
 /* <!--===============================================================================================--> */
 const backButton = document.querySelector('.backButton');
 

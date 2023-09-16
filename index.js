@@ -1,18 +1,14 @@
-var navbarMenuLists = document.querySelector('#lists');
-var menuButton = document.querySelector('#menuBarButton');
+const profileButton = document.querySelector('#profileButton');
+const profileDropdown = document.querySelector('#profileDropdown');
 
-menuButton.addEventListener('click', () => {
-    if(menuButton.classList.contains('bi-list')){
-        menuButton.classList.remove('bi-list');
-        menuButton.classList.add('bi-x-lg');
-        navbarMenuLists.classList.remove('d-none');
+profileButton.addEventListener('click', () => {
+    if (profileDropdown.classList.contains('d-none')) {
+        profileDropdown.classList.remove('d-none');
+        profileDropdown.classList.add('d-flex');
     }
 
-    else{
-        menuButton.classList.remove('bi-x-lg');
-        menuButton.classList.add('bi-list');
-        navbarMenuLists.classList.add('d-none');
+    else {
+        profileDropdown.classList.remove('d-flex');
+        profileDropdown.classList.add('d-none');
     }
-});
-
-
+})
