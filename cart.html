@@ -190,20 +190,24 @@
                                     <td>1035</td>
                                     <td><button class="btn btn-danger">Remove</button></td>
                                 </tr>
-                                <tfoot style="border-bottom: 0px solid transparent !important;" id="tableFooter">
-                                    <tr>
-                                      <td></td>
-                                      <td></td>
-                                      <td></td>
-                                      <td></td>
-                                      <td><h3>Total Price:</h3></td>
-                                      <td>₱1000</td>
-                                      <td></td>
-                                    </tr>
-                                  </tfoot>
+                            <tfoot style="border-bottom: 0px solid transparent !important;" id="tableFooter">
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <h3>Total Price:</h3>
+                                    </td>
+                                    <td>₱1000</td>
+                                    <td><button class="btn btn-primary"><a href="#"
+                                                style="color: white; text-decoration: none; text-wrap: nowrap;">Proceed to
+                                                Checkout</a></button></td>
+                                </tr>
+                            </tfoot>
                             </tbody>
-                            
-                        </table>                 
+
+                        </table>
                     </div>
                 </div>
             </div>
@@ -216,16 +220,16 @@
     <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
     <!--===============================================================================================-->
-    <script>$(document).ready(function() {
-        $('#example').DataTable( {
-            "dom": '<lf<t>ip<l>',
-            "ordering": true,
-            "info": false,
-            "paging": true,
-            "bLengthChange": false,
-            "searching": true,
-        } );
-    });</script>
+    <script>$(document).ready(function () {
+            $('#example').DataTable({
+                "dom": '<lf<t>ip<l>',
+                "ordering": true,
+                "info": false,
+                "paging": true,
+                "bLengthChange": false,
+                "searching": true,
+            });
+        });</script>
 </body>
 
 </html>
