@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
+    <title>Orders</title>
     <!--===============================================================================================-->
     <link rel="stylesheet" href="dashboard.css">
     <!--===============================================================================================-->
@@ -67,18 +67,13 @@
             <div class="d-flex flex-column m-3 m-md-3 gap-3" id="tableContainer">
 
                 <div class="d-flex flex-column w-100 p-4" id="tableTitle">
-                    <h1>Products</h1>
+                    <h1>Orders</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Products</li>
+                            <li class="breadcrumb-item active" aria-current="page">Orders</li>
                         </ol>
                     </nav>
-                </div>
-
-                <div class="d-flex justify-content-between align-items-center px-3" id="tableAddItem">
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#addProductModal">Add Product
-                        +</button>
                 </div>
 
                 <div class="px-3 pb-3">
@@ -86,86 +81,34 @@
                         <table id="example" class="table table-hover table-bordered">
                             <thead class="table-success">
                                 <tr>
-                                    <th>id</th>
-                                    <th>Product Name</th>
-                                    <th>Product Image</th>
-                                    <th>Product Price</th>
-                                    <th>Product Stocks</th>
-                                    <th>Product Status</th>
-                                    <th>Action</th>
+                                    <th>order_id</th>
+                                    <th>reference_number</th>
+                                    <th>payment_method</th>
+                                    <th>customer_id</th>
+                                    <th>order_date</th>
+                                    <th>total_amount</th>
+                                    <th>product_id</th>
+                                    <th>status</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>1</td>
-                                    <td>Apple</td>
-                                    <td><img src="./img/login.jpg" alt=""></td>
-                                    <td>15</td>
-                                    <td>100</td>
-                                    <td>fully stocked</td>
+                                    <td>01</td>
+                                    <td>001</td>
+                                    <td>Cash on Pickup</td>
+                                    <td>01</td>
+                                    <td>01/01/0001</td>
+                                    <td>69.420</td>
+                                    <td>01</td>
                                     <td>
-                                        <div class="d-flex align-items-center place-items-center gap-2"
-                                            id="actionLists">
-                                            <span data-bs-toggle="modal" data-bs-target="#viewProductModal"
-                                                class="material-symbols-outlined" id="view">
-                                                visibility
-                                            </span><span data-bs-toggle="modal" data-bs-target="#settingsProductModal"
-                                                class="material-symbols-outlined" id="settings">
-                                                settings
-                                            </span><span data-bs-toggle="modal" data-bs-target="#deleteProductModal"
-                                                class="material-symbols-outlined" id="delete">
-                                                delete
-                                            </span>
-                                        </div>
+                                        <select name="" id="" class="p-2">
+                                            <option value="" style="color: red;">Ready to Pickup</option>
+                                            <option value="" style="color: orange;">Pending</option>
+                                            <option value="" style="color: green;">Completed</option>
+                                        </select>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Apple</td>
-                                    <td><img src="./img/eggtray.jpg" alt=""></td>
-                                    <td>15</td>
-                                    <td>100</td>
-                                    <td>fully stocked</td>
-                                    <td>
-                                        <div class="d-flex align-items-center place-items-center gap-2"
-                                            id="actionLists">
-                                            <span data-bs-toggle="modal" data-bs-target="#viewProductModal"
-                                                class="material-symbols-outlined" id="view">
-                                                visibility
-                                            </span><span data-bs-toggle="modal" data-bs-target="#settingsProductModal"
-                                                class="material-symbols-outlined" id="settings">
-                                                settings
-                                            </span><span data-bs-toggle="modal" data-bs-target="#deleteProductModal"
-                                                class="material-symbols-outlined" id="delete">
-                                                delete
-                                            </span>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Apple</td>
-                                    <td><img src="./img/307019939_495639052574022_4056580089628267227_n.png" alt="">
-                                    </td>
-                                    <td>15</td>
-                                    <td>100</td>
-                                    <td>fully stocked</td>
-                                    <td>
-                                        <div class="d-flex align-items-center place-items-center gap-2"
-                                            id="actionLists">
-                                            <span data-bs-toggle="modal" data-bs-target="#viewProductModal"
-                                                class="material-symbols-outlined" id="view">
-                                                visibility
-                                            </span><span data-bs-toggle="modal" data-bs-target="#settingsProductModal"
-                                                class="material-symbols-outlined" id="settings">
-                                                settings
-                                            </span><span data-bs-toggle="modal" data-bs-target="#deleteProductModal"
-                                                class="material-symbols-outlined" id="delete">
-                                                delete
-                                            </span>
-                                        </div>
-                                    </td>
-                                </tr>
+                                
                             </tbody>
                         </table>
                     </div>
