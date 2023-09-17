@@ -117,3 +117,7 @@ table td {
     height: 100px;
     min-height: 100%;
 }
+
+#tableFooter tr td{
+    height: 60px !important;
+}
