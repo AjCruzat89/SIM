@@ -51,8 +51,8 @@
         <li><a href="#">Inquiries</a></li>
         <li><a href="#">Order Status</a></li>
     </ul>
-    <div class="p-0 p-sm-3 p-lg-4">
-        <div class="d-flex flex-column-reverse flex-lg-row  " id="cart">
+    <div class="px-0 py-0 px-md-5 py-md-4">
+        <div class="oveflow-hidden" id="cart">
             <div class="col">
                 <div class="d-flex p-3">
                     <h1>Shopping Cart</h1>
@@ -60,15 +60,15 @@
                 <hr>
                 <div class="p-3">
                     <div class="table-responsive" style="height: 590px; overflow: scroll;">
-                        <table id="example" class="table table-hover">
+                        <table id="example" class="table table-hover position-relative">
                             <thead class="table-primary">
                                 <tr>
-                                    <th>id</th>
                                     <th>Product Name</th>
                                     <th>Product Image</th>
                                     <th>Product Price</th>
-                                    <th>Product Stocks</th>
-                                    <th>Product Status</th>
+                                    <th>Product Size</th>
+                                    <th>Product Quantity</th>
+                                    <th>Product Subtotal</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
@@ -78,8 +78,8 @@
                                     <td>Apple</td>
                                     <td><img src="./img/login.jpg" alt=""></td>
                                     <td>15</td>
-                                    <td>100</td>
-                                    <td>fully stocked</td>
+                                    <td>1</td>
+                                    <td>15</td>
                                     <td><button class="btn btn-danger">Remove</button></td>
                                 </tr>
                                 <tr>
@@ -87,8 +87,8 @@
                                     <td>Apple</td>
                                     <td><img src="./img/login.jpg" alt=""></td>
                                     <td>15</td>
-                                    <td>100</td>
-                                    <td>fully stocked</td>
+                                    <td>69</td>
+                                    <td>1035</td>
                                     <td><button class="btn btn-danger">Remove</button></td>
                                 </tr>
                                 <tr>
@@ -96,8 +96,8 @@
                                     <td>Apple</td>
                                     <td><img src="./img/login.jpg" alt=""></td>
                                     <td>15</td>
-                                    <td>100</td>
-                                    <td>fully stocked</td>
+                                    <td>1</td>
+                                    <td>15</td>
                                     <td><button class="btn btn-danger">Remove</button></td>
                                 </tr>
                                 <tr>
@@ -105,8 +105,8 @@
                                     <td>Apple</td>
                                     <td><img src="./img/login.jpg" alt=""></td>
                                     <td>15</td>
-                                    <td>100</td>
-                                    <td>fully stocked</td>
+                                    <td>69</td>
+                                    <td>1035</td>
                                     <td><button class="btn btn-danger">Remove</button></td>
                                 </tr>
                                 <tr>
@@ -114,8 +114,8 @@
                                     <td>Apple</td>
                                     <td><img src="./img/login.jpg" alt=""></td>
                                     <td>15</td>
-                                    <td>100</td>
-                                    <td>fully stocked</td>
+                                    <td>1</td>
+                                    <td>15</td>
                                     <td><button class="btn btn-danger">Remove</button></td>
                                 </tr>
                                 <tr>
@@ -123,8 +123,8 @@
                                     <td>Apple</td>
                                     <td><img src="./img/login.jpg" alt=""></td>
                                     <td>15</td>
-                                    <td>100</td>
-                                    <td>fully stocked</td>
+                                    <td>69</td>
+                                    <td>1035</td>
                                     <td><button class="btn btn-danger">Remove</button></td>
                                 </tr>
                                 <tr>
@@ -132,8 +132,8 @@
                                     <td>Apple</td>
                                     <td><img src="./img/login.jpg" alt=""></td>
                                     <td>15</td>
-                                    <td>100</td>
-                                    <td>fully stocked</td>
+                                    <td>69</td>
+                                    <td>1035</td>
                                     <td><button class="btn btn-danger">Remove</button></td>
                                 </tr>
                                 <tr>
@@ -141,8 +141,8 @@
                                     <td>Apple</td>
                                     <td><img src="./img/login.jpg" alt=""></td>
                                     <td>15</td>
-                                    <td>100</td>
-                                    <td>fully stocked</td>
+                                    <td>69</td>
+                                    <td>1035</td>
                                     <td><button class="btn btn-danger">Remove</button></td>
                                 </tr>
                                 <tr>
@@ -150,8 +150,8 @@
                                     <td>Apple</td>
                                     <td><img src="./img/login.jpg" alt=""></td>
                                     <td>15</td>
-                                    <td>100</td>
-                                    <td>fully stocked</td>
+                                    <td>69</td>
+                                    <td>1035</td>
                                     <td><button class="btn btn-danger">Remove</button></td>
                                 </tr>
                                 <tr>
@@ -159,8 +159,8 @@
                                     <td>Apple</td>
                                     <td><img src="./img/login.jpg" alt=""></td>
                                     <td>15</td>
-                                    <td>100</td>
-                                    <td>fully stocked</td>
+                                    <td>69</td>
+                                    <td>1035</td>
                                     <td><button class="btn btn-danger">Remove</button></td>
                                 </tr>
                                 <tr>
@@ -168,8 +168,8 @@
                                     <td>Apple</td>
                                     <td><img src="./img/login.jpg" alt=""></td>
                                     <td>15</td>
-                                    <td>100</td>
-                                    <td>fully stocked</td>
+                                    <td>69</td>
+                                    <td>1035</td>
                                     <td><button class="btn btn-danger">Remove</button></td>
                                 </tr>
                                 <tr>
@@ -177,8 +177,8 @@
                                     <td>Apple</td>
                                     <td><img src="./img/login.jpg" alt=""></td>
                                     <td>15</td>
-                                    <td>100</td>
-                                    <td>fully stocked</td>
+                                    <td>69</td>
+                                    <td>1035</td>
                                     <td><button class="btn btn-danger">Remove</button></td>
                                 </tr>
                                 <tr>
@@ -186,37 +186,24 @@
                                     <td>Apple</td>
                                     <td><img src="./img/login.jpg" alt=""></td>
                                     <td>15</td>
-                                    <td>100</td>
-                                    <td>fully stocked</td>
+                                    <td>69</td>
+                                    <td>1035</td>
                                     <td><button class="btn btn-danger">Remove</button></td>
                                 </tr>
+                                <tfoot>
+                                    <tr>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td><h3>Total Price:</h3></td>
+                                      <td>₱1000</td>
+                                      <td></td>
+                                    </tr>
+                                  </tfoot>
                             </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <div class="col col-lg-4">
-                <div class="d-flex flex-column justify-content-between">
-                    <div class="d-flex flex-column">
-                        <div class="p-3">
-                            <h1>Checkout</h1>
-                        </div>
-                        <hr>
-                        <div class="d-flex flex-column p-3" id="checkoutLists">
-                            <label for="">First Name</label>
-                            <input type="text" placeholder="First Name...">
-                            <label for="">Last Name</label>
-                            <input type="text" placeholder="Last Name...">
-                            <label for="">Email</label>
-                            <input type="text" placeholder="Email...">
-                            <label for="">Phone Number</label>
-                            <input type="number" placeholder="Phone Number...">
-                            <label for="">Address</label>
-                            <input type="text" placeholder="Address">
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-center align-items-center p-3">
-                        <button class="btn btn-primary">Submit</button>
+                            
+                        </table>                 
                     </div>
                 </div>
             </div>
@@ -229,7 +216,16 @@
     <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
     <!--===============================================================================================-->
-    <script>new DataTable('#example');</script>
+    <script>$(document).ready(function() {
+        $('#example').DataTable( {
+            "dom": '<lf<t>ip<l>',
+            "ordering": true,
+            "info": false,
+            "paging": true,
+            "bLengthChange": false,
+            "searching": true,
+        } );
+    });</script>
 </body>
 
 </html>
