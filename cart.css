@@ -113,4 +113,6 @@ table td {
 
 #tableFooter tr td{
     height: 60px !important;
+    background-color: #404040;
+    border-bottom: transparent;
 }
