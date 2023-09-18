@@ -132,7 +132,7 @@ nav i:hover{
 }
 
 #profileButton:hover{
-    color: #049547;
+    color: #C8EC56;
 }
 
 #profileDropdown {
@@ -161,12 +161,14 @@ nav i:hover{
 }
 /* <!--===============================================================================================--> */
 #gridBox .col{
-    height: 640px !important;
+    height: 600px !important;
+    min-height:600px !important;
 }
 
 @media (max-width: 768px) {
     #gridBox .col{
         height: 300px !important;
+        min-height: 100% !important;
     }
 }
 

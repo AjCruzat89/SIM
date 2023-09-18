@@ -50,7 +50,7 @@ nav i:hover {
 }
 
 #profileButton:hover {
-    color: #049547;
+    color: #C8EC56;
 }
 
 #profileDropdown {
@@ -79,13 +79,6 @@ nav i:hover {
 }
 
 /* <!--===============================================================================================--> */
-#cart {
-    box-shadow: 1px -1px 43px 0px rgba(0, 0, 0, 1);
-    -webkit-box-shadow: 1px -1px 43px 0px rgba(0, 0, 0, 1);
-    -moz-box-shadow: 1px -1px 43px 0px rgba(0, 0, 0, 1);
-    border-radius: 15px;
-}
-
 @media (min-width: 576px) {
     #cart{
         overflow: hidden;
@@ -114,7 +107,7 @@ table img {
 }
 
 table td {
-    height: 100px;
+    height: auto;
     min-height: 100%;
 }
 
