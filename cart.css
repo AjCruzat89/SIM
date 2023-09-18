@@ -1,5 +1,6 @@
 body {
     background-color: #404040 !important;
+    font-family: Roboto, sans-serif !important;
 }
 
 /* <!--===============================================================================================--> */
@@ -116,3 +117,34 @@ table td {
     background-color: #404040;
     border-bottom: transparent;
 }
+
+#tableFooter tr td button{
+    background-color: #049547;
+    border: transparent;
+}
+
+#tableFooter tr td button:hover{
+    background-color: #024b24;
+}
+
+.page-item.active .page-link{
+    background-color: #049547 !important;
+    border: 1px solid #049547 !important;
+}
+
+.page-item.active .page-link:hover{
+    color: black;
+}
+
+.page-item .page-link{
+    color: #049547;
+}
+
+.page-item .page-link:hover{
+    color: #024b24;
+}
+
+table thead tr th{
+    background-color: #049547 !important;
+}
+
