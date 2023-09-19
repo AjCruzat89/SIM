@@ -312,3 +312,7 @@ table td{
     background-color: rgba(195, 230, 203, 0.1)
     ;
 }
+
+.dt-buttons.btn-group.flex-wrap{
+    margin-top: 5px;
+}
