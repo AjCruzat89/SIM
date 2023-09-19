@@ -146,5 +146,6 @@ table td {
 
 table thead tr th{
     background-color: #049547 !important;
+    border-bottom: transparent;
 }
 
